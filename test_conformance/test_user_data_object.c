@@ -17,6 +17,8 @@
 
 #ifdef OPENVX_USE_USER_DATA_OBJECT
 
+#include <string.h>
+
 #include "test_engine/test.h"
 #include <VX/vx.h>
 #include <VX/vxu.h>

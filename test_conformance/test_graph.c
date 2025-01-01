@@ -2962,7 +2962,7 @@ TEST_WITH_ARG(GraphEnhanced, testKernelName_enhanced, kernel_name_arg,
 
 #endif //OPENVX_USE_ENHANCED_VISION
 
-#if defined OPENVX_CONFORMANCE_NEURAL_NETWORKS || OPENVX_CONFORMANCE_NNEF_IMPORT
+#if defined OPENVX_CONFORMANCE_NEURAL_NETWORKS || defined OPENVX_CONFORMANCE_NNEF_IMPORT
 
 /* *****************UserKernelsOfNNAndNNEF tests*******************************/
 TESTCASE(UserKernelsOfNNAndNNEF, CT_VXContext, ct_setup_vx_context, 0)
@@ -4149,7 +4149,7 @@ TESTCASE_TESTS(GraphEnhanced, testKernelName_enhanced)
 
 #endif
 
-#if defined OPENVX_CONFORMANCE_NEURAL_NETWORKS || OPENVX_CONFORMANCE_NNEF_IMPORT
+#if defined OPENVX_CONFORMANCE_NEURAL_NETWORKS || defined OPENVX_CONFORMANCE_NNEF_IMPORT
 
 TESTCASE_TESTS(UserKernelsOfNNAndNNEF,
         testvxAddUserKernel,
