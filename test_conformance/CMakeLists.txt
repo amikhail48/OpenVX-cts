@@ -27,7 +27,7 @@ file(GLOB NETWORK_SOURCES "./Networks/src/*")
 endif(OPENVX_USE_NN_16)
 
 if(OPENVX_CONFORMANCE_NNEF_IMPORT)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/../kernels/NNEF-Tools/parser/cpp/include)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_SOURCE_DIR}/../kernels/nnef/NNEF-Tools/nnef-pyproject/nnef/cpp/include)
 else()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 endif()
